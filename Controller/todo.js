@@ -47,6 +47,7 @@ export const todoupdate = async (req, res) => {
                 $set: {
                     title,
                     description,
+                    completed,
                 },
             }
         );
