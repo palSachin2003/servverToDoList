@@ -39,7 +39,7 @@ export const addToDoList = async (req, res) => {
 export const todoupdate = async (req, res) => {
     try {
         const todoID = req.params.id;
-        const { title, description } = req.body;
+        const { title, description,completed } = req.body;
         const todoData = await todoModel.findOne({ _id: todoID });
         const todotdata = await todoModel.updateOne(
             { _id: todoID },
