@@ -34,8 +34,6 @@ export const addToDoList = async (req, res) => {
     }
 };
 
-
-
 export const todoupdate = async (req, res) => {
     try {
         const todoID = req.params.id;
